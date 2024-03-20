@@ -3,7 +3,7 @@ const express = require("express");
 var cors = require('cors');
 var bodyParser = require('body-parser');
 const fetch = require('node-fetch');
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBot = require('7198778240:AAGpvMBSVJ30F2IgOQGw24oQovsh86dmAs4');
 const bot = new TelegramBot(process.env["bot"], {polling: true});
 var jsonParser=bodyParser.json({limit:1024*1024*20, type:'application/json'});
 var urlencodedParser=bodyParser.urlencoded({ extended:true,limit:1024*1024*20,type:'application/x-www-form-urlencoded' });
@@ -14,7 +14,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 //Modify your URL here
-var hostURL="YOUR URL";
+var hostURL="https://bot-arabic-28.onrender.com";
 //TOGGLE for Shorters
 var use1pt=false;
 
